@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <form action="/submit" method="post">
+        <label>First name*</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required><br><br>
+        <label>Last name</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+        <label>Email*</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+        <label>Password*</label><br>
+        <input type="text" id="password" name="password" required><br><br>
+        <label>Confirm Password</label><br>
+        <input type="text" id="confirmpassword" name="confirmpassword" required><br><br>
+
+        <p><strong>Gender:</strong></p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+
+        <p><strong>Hobbies:</strong></p>
+        <input type="radio" id="music" name="hobbies">
+        <label for="music">Music</label>
+        <input type="radio" id="sports" name="hobbies">
+        <label for="sports">Sports</label>
+        <input type="radio" id="travel" name="hobbies">
+        <label for="travel">Travel</label>
+        <input type="radio" id="movies" name="hobbies">
+        <label for="movies">Movies</label><br><br>
+
+        <label>Source of Income:</label><br>
+        <select name="income-source"><option value="employed">Employed</option>
+        <option value="student">Student</option>
+        <option value="unemployed">UnEmployed</option><br><br>
+        </select><br><br>
+        <label>Upload Profile Picture</label><br>
+        <input type="file" name="profile-picture">
+        <label>Age</label>
+        <input type="number" name="age" value="18"><br><br>
+        <label>Bio</label><br>
+        <textarea name="bio" rows="3"></textarea></textarea>
+
+
+
+    </form>
+
+</body>
+</html>
